@@ -1,0 +1,7 @@
+com\tienda\managebean\SeguridadManagedBean.class
+com\tienda\managebean\EstadoCivilManagedBean.class
+com\tienda\managebean\UsuarioManagedBean.class
+com\tienda\managebean\ProveedorManagedBean.class
+com\tienda\managebean\CargoMangeBean.class
+com\tienda\managebean\ManageBeanInterfaces.class
+com\tienda\managebean\PersonaManagedBean.class

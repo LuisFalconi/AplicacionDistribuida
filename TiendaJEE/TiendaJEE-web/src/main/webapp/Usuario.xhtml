@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>LOGIN</title>
+    </h:head>
+    <h:body>
+        <div align="center">
+            <h1>INICIO DE SESIÓN</h1>
+            <img src="usuarios.png" width="150" height="90"/>
+        </div>
+
+        <h:form>
+
+            <p:messages autoUpdate="true" showDetail="true"></p:messages>
+            <div align="center">
+                <br/>
+                <br/>
+                <br/>
+                <h:panelGrid columns="2" >
+
+                    <p:outputLabel for="txtUsuario" value="Usuario"></p:outputLabel>
+
+                    <br/>
+                    <br/>
+                    <br/>
+                    <p:inputText value="#{usuarioManagedBean.usuario.nombre}" id="txtUsuario" required="true"></p:inputText>
+                    <br/>
+                    <br/>
+                    <br/>
+
+                    <p:outputLabel for="txtClave" value="Clave"></p:outputLabel>
+
+                    <br/>
+                    <br/>
+                    <br/>
+                    <p:password value="#{usuarioManagedBean.usuario.password}" id="txtClave" required="true"></p:password>
+
+                    <br/>
+                    <br/>
+                    <br/>
+
+                    <p:commandButton icon="ui-icon-key" value="Iniciar Sesión" action="#{usuarioManagedBean.iniciarSesion()}"></p:commandButton>
+
+                    <br/>
+                    <br/>
+                    <br/>
+                </h:panelGrid>
+            </div>
+        </h:form>
+    </h:body>
+</html>
